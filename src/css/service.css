@@ -1,0 +1,30 @@
+.section-service {
+    opacity: 0;
+    background: var(--bg);
+    transition: opacity 1.2s ease-in-out;
+    position: relative;
+}
+.section-service.animate {
+    opacity: 1;
+}
+
+.section-service .service-main {
+    gap: 2rem;
+}
+
+.service-box {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: start;
+    transition: all 0.3s linear;
+    cursor: default;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    padding: 4rem 4rem;
+    width: 100%;
+    height: 100%;
+}
+.service-box i {
+    font-size: 4rem;
+}

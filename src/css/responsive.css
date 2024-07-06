@@ -1,0 +1,287 @@
+/* 1500px */
+
+@media (max-width: 94em) {
+    html {
+        font-size: 60%;
+    }
+
+    .container {
+        max-width: 120rem;
+    }
+
+    .hero-content {
+        height: 100%;
+    }
+
+    .hero-heading {
+        font-size: 7rem;
+        max-width: 120rem;
+    }
+
+    .hero-para {
+        max-width: 80rem;
+        font-size: 2rem;
+        line-height: 2.5;
+    }
+
+    .f-main {
+        gap: 10rem;
+        margin: 0 auto;
+    }
+
+    .main-heading {
+        font-size: 3.5rem;
+    }
+
+    .inner-heading {
+        font-size: 2.5rem;
+    }
+
+    .about-heading {
+        font-size: 3.5rem;
+        max-width: 120rem;
+    }
+
+    .about-para {
+        max-width: 100rem;
+    }
+}
+
+/* 1180px */
+
+@media (max-width: 74em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+/* 990px */
+
+@media (max-width: 62em) {
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        max-width: 100rem;
+    }
+
+    .hero-heading {
+        font-size: 6rem;
+        max-width: 80rem;
+    }
+
+    .main-heading {
+        font-size: 3.5rem;
+    }
+
+    .about-heading {
+        max-width: 80rem;
+    }
+
+    .about-para {
+        max-width: 80rem;
+    }
+
+    .f-main {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .f-content {
+        justify-content: space-between;
+        gap: 8rem;
+        align-items: start;
+    }
+
+    .f-part {
+        margin: 0;
+    }
+}
+
+/* 900px */
+
+@media (max-width: 57em) {
+    .header {
+        z-index: 9999;
+    }
+
+    .sticky {
+        padding: 4rem 9rem;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 50vh;
+        background: var(--bg);
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        transform: translateY(-100%);
+        transition: all 0.3s linear;
+        visibility: hidden;
+        opacity: 0;
+        box-shadow: 0 1px 1px rgb(208, 208, 208);
+        pointer-events: none;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 3.5rem;
+        padding: 9rem 9rem 0 9rem;
+    }
+
+    .navlink {
+        font-size: 2rem;
+        color: var(--black);
+    }
+
+    .book {
+        padding: 0;
+        border: 0;
+    }
+    .book:hover {
+        padding: 0;
+        border: 0;
+        background: none;
+    }
+
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 1001;
+        border: 3px solid var(--black);
+        color: var(--black);
+        padding: 1rem 1rem;
+        position: relative;
+    }
+
+    .mobile-nav-icon {
+        font-size: 2rem;
+    }
+
+    .active .navbar {
+        transform: translateX(0%);
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .active .mobile-nav-icon[name="ham"] {
+        display: none;
+    }
+
+    .active .mobile-nav-icon[name="cross"] {
+        display: block;
+        color: var(--black)
+    }
+}
+
+/* 850px */
+
+@media (max-width: 54em) {
+    html {
+        font-size: 50%;
+    }
+    .container {
+        max-width: 80rem;
+    }
+    .service-main {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .input-main {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* 670px */
+
+@media (max-width: 42em) {
+    html {
+        font-size: 50%;
+    }
+    .container {
+        max-width: 60rem;
+    }
+    .hero-heading {
+        max-width: 60rem;
+        font-size: 4.5rem;
+    }
+    .hero-para {
+        max-width: 60rem;
+    }
+    .main-heading {
+        font-size: 3rem;
+    }
+    .about-heading {
+        font-size: 3rem;
+    }
+    .about-para {
+        font-size: 2rem;
+    }
+}
+
+/* 500px */
+
+@media (max-width: 32em) {
+    html {
+        font-size: 50%;
+    }
+    .container {
+        max-width: 40rem;
+    }
+    .navbar {
+        height: 40vh;
+    }
+    .navbar ul {
+        padding: 9rem 9rem 0 9rem;
+    }
+    .hero-heading {
+        max-width: 50rem;
+        line-height: 2;
+        font-size: 3rem;
+    }
+    .hero-para {
+        max-width: 40rem;
+        font-size: 1.6rem;
+    }
+    .hero-more p {
+        font-size: 1.8rem;
+    }
+    .main-heading {
+        font-size: 2.5rem;
+    }
+    .main-para {
+        font-size: 1.8rem;
+    }
+    .inner-heading {
+        font-size: 2.2rem;
+    }
+    .about-heading {
+        font-size: 2.5rem;
+        line-height: 2;
+    }
+    .about-para {
+        font-size: 1.6rem;
+    }
+}
+
+/* 400px */
+
+@media (max-width: 25em) {
+    html {
+        font-size: 45%;
+    }
+    .main-heading {
+        font-size: 2rem;
+        line-height: 2;
+    }
+    .main-para {
+        font-size: 1.6rem;
+    }
+}

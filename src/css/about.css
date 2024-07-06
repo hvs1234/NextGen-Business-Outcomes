@@ -1,0 +1,82 @@
+.section-hero-about {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.section-hero-about.animate {
+    opacity: 1;
+}
+
+.section-aboutpage {
+    transition: all 0.4s linear;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffbcdb, #ffe1e5);
+    opacity: 1;
+}
+
+.about-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.section-aboutmore {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.section-aboutmore.animate {
+    opacity: 1;
+}
+
+.about-heading {
+    max-width: 100%;
+    line-height: 1.6;
+    font-size: 4.5rem;
+}
+
+.about-para {
+    font-size: 2.2rem;
+    font-weight: 500;
+    -webkit-text-stroke: 1px var(--black);
+    max-width: 140rem;
+    line-height: 2.2;
+}
+
+.aboutmore-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+}

@@ -1,0 +1,106 @@
+.section-footer {
+    transition: opacity 1s ease-in-out;
+    background: rgb(23, 8, 13);
+    opacity: 0;
+    position: relative;
+}
+.section-footer.animate {
+    padding: 10rem 0;
+    opacity: 1;
+}
+.f-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+.f-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+    /* gap: 1rem; */
+}
+.f-logo p {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: var(--white);
+}
+.social-links {
+    display: flex;
+    gap: 2rem;
+}
+.social-links a i {
+    font-size: 2rem;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    color: var(--white);
+    transition: all 0.4s linear;
+}
+.social-links a i:hover {
+    background: var(--white);
+    color: var(--black);
+}
+.f-logo .logo-name {
+    font-size: 4rem;
+}
+.f-logo .logo-name span {
+    color: var(--crimson);
+}
+.f-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10rem;
+    padding: 0;
+    overflow: hidden;
+}
+.f-part {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 0 auto;
+}
+.f-part h3 {
+    font-size: 2.5rem;
+    color: var(--bg);
+    font-weight: 500;
+}
+.f-link ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.f-navlink {
+    color: var(--bg);
+    padding: 0;
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+.f-navlink:hover {
+    border: 0;
+    padding: 0;
+    color: goldenrod;
+}
+
+.copyright {
+    background: var(--black);
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.copyright p {
+    color: var(--bg);
+    font-weight: 500;
+}
+.copyright p a {
+    color: goldenrod;
+    transition: all 0.3s linear;
+}
+.copyright p a:hover{
+    color: rgb(146, 126, 10);
+}

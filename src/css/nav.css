@@ -1,0 +1,75 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 9rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+    transition: all 0.4s linear;
+}
+
+.sticky {
+    padding: 2rem 9rem;
+    background: var(--bg);
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 1px rgb(216, 216, 216);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+}
+
+.logo-para {
+    font-size: 4rem;
+    color: var(--black);
+}
+
+.logo-para span {
+    color: var(--crimson);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 4rem;
+}
+
+.navlink {
+    color: var(--black);
+    font-size: 2.2rem;
+    transition: all 0.3s linear;
+    overflow: hidden;
+}
+
+.navlink:hover {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--black);
+}
+
+.book {
+    border: 1px solid var(--black);
+    border-radius: 40px;
+    padding: 1rem 4rem;
+}
+
+.book:hover {
+    padding: 1rem 4rem;
+    background: black;
+    color: var(--white);
+    transition: all 0.1s linear;
+}
+
+.mobile-navbar-btn {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon[name="cross"] {
+    display: none;
+}
